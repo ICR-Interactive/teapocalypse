@@ -4,7 +4,7 @@ using System.Collections;
 public class RandomRotator : MonoBehaviour {
 	public float tumble;
 
-	public void Start() {
+	void Start() {
 		GetComponent<Rigidbody> ().angularVelocity = Random.insideUnitSphere * tumble;
 	}
 }
